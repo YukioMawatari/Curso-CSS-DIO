@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Background Attachment</title>
+
+    <!--background-attachment vai definir como o fundo do nosso elemento vai se movimentar com a janela do navegador
+        background-attachment: fixed; a img fica fixa msm rolando a página
+        background-attachment: scroll; quando rolar o coteudo do elemento fica parada, porem quando rola fora do elemnto, o conteudo do elemento vai embora, conforme vai descendo a página
+        background-attachment: local; a img vai rolar junto com o conteudo do nosso elemento.
+    -->
+    <style>
+        body{
+            height: 200vh;
+        }
+        div{
+            margin-bottom: 30px;
+        }
+
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            background-image: url('./img/dio.png');
+            background-size: cover;
+            border: 1px solid red;
+            overflow: auto;
+            color: white;
+        }
+
+        #fixed{
+            background-attachment: fixed;
+        }
+
+        #scroll{
+            background-attachment: scroll;
+        }
+
+        #local{
+            background-attachment: local;
+        }
+    </style>
+</head>
+<body>
+    <code>background-attachment: fixed;</code>
+    <div class="exemplo" id="fixed">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+    </div>
+
+    <code>background-attachment: scroll;</code>
+    <div class="exemplo" id="scroll">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+    </div>
+
+    <code>background-attachment: local;</code>
+    <div class="exemplo" id="local">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae delectus id nisi facere minus accusamus officiis sit nulla provident temporibus, magni repudiandae! Ut, dolorem. Quis inventore et cum commodi.
+
+    </div>
+</body>
+</html>

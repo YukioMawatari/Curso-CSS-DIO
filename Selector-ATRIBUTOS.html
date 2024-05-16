@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector ATRIBUTOS</title>
+
+    <style>
+        /*[atributo] {}*/
+        /*[atributo=valor especifico] {}*/
+
+        /*Quando coloca o "~" procura a palavra exata ou dentro do atributo que tenha a palavra separada por espaço*/
+        /*[atributo~=valor especifico] {}*/
+        [title~="Streaming"]{
+            background-color: red;
+        }
+
+        /*Quando colocar "|" procura o texto exato ou a palavra separada por hifen "-"*/
+        /*[atributo|=valor especifico] {}*/
+        [title~="Streaming-Shopee"]{
+            background-color: green;
+        }
+
+        /*Prefixo*/
+        [href^="http//"]{
+            background-color: lightgreen;
+        }
+
+        /*Sufixo*/
+        [href$="user"]{
+            background-color: orange;
+        }
+
+        /*Procura em qualquer lugar onde o atributo tem essa palavra*/
+        [href*="pink"]{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a title="Streaming Netflix" href="https://www.netflix.com/br/user">Netflix</a>
+            </li>
+
+            <li>
+                <a title="Streaming-Shopee" href="https://shopee.com.br/m/5-5?gad_source=1&gclid=CjwKCAjw88yxBhBWEiwA7cm6pZ6BHneIxzxYVNyrS6UcQB3zjYYctBO_2V_cPyZkizvRG4mCAwfiFBoCKkUQAvD_BwE">Shopee</a>
+            </li>
+
+            <li>
+                <a title="Google" href="pink/https://www.google.com/">Google</a>
+            </li>
+
+            <a href="">Disney Plus</a>
+        </ul>
+    </div>
+</body>
+</html>

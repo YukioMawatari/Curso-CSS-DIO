@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL E HSLA</title>
+
+    <!--
+        HSLA: é canal do HSL, só que é possível definir a opacidade (transparencia) da cor, o alpha (transparencia) é de 0.0 até 1.0.
+    -->
+
+    <style>
+        #hsl{
+            background-color: hsl(0, 100%, 40%);
+        }
+
+        #hsla{
+            background-color: hsla(0, 100%, 80%, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas da gente definirmos cores utilizando CSS</p>
+    <ul>
+        <li id="pre-definidas">Cores Pré Definidas</li>
+        <li id="current-color">Palavra chave "currentcolor"</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hex-transparencia">Hexadecimal com transparencia</li>
+        <li id="rgb">RGB</li>
+        <li id="rgba">RGBA</li>
+        <li id="hsl">HSL</li>
+        <li id="hsla">HSLA</li>
+    </ul>
+
+<hr />
+
+    <h3>HSL</h3>
+    <code>hsl(hue, saturation, lightness)</code>
+
+    <ul>
+        <li>
+            <b>HUE (matiz)</b> é o grau na roda de cores que vai de 0 a 360 graus
+            <figure>
+                <img src="rodacor.jpg">
+            </figure>
+            <ul>
+                <li>0 ou 360 é vermelha</li>
+                <li>120 é verde</li>
+                <li>240 é azul</li>
+            </ul>
+        </li>
+
+        <li>
+            <b>Saturation (saturação)</b> valor porcentual
+            <ul>
+                <li>0% um tom de cinza</li>
+                <li>100% cor total</li>
+            </ul>
+        </li>
+
+        <li>
+            <b>Lightness (luminosidade)</b> luminosidade da cor
+            <ul>
+                <li>0% é preto</li>
+                <li>100% é branco</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

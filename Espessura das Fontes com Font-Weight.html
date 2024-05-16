@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    /* Definindo a espessura das letras da nossa font com font-weight */
+    <title>Espessura das Fontes com Font-Weight</title>
+    <style>
+        #tamanho{
+            font-weight: 600;
+        }
+        #normal{
+            font-weight: normal;
+        }
+        #bold{
+            font-weight: bold;
+        }
+        div{
+            font-weight: normal;
+        }
+
+        /*Comparando com o elemento pai e aplicando uma espessura de font mais fina, caso que eu queira uma font mais grossa utiliza o bolder*/
+
+        div p{
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>font-weight</code></h1>
+
+    <p id="tamanho">Definindo a espessura da font</p>
+
+    <code>font-weight: normal</code>
+    <p id="normal">font-weight: normal;</p>
+
+    <code>font-weight: bold</code>
+    <p id="bold">font-weight: bold;</p>
+
+    <div>
+        elemento pai
+        <p>elemento filho</p>
+    </div>
+</body>
+</html>

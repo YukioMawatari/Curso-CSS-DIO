@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Descendente</title>
+    <style>
+        .fundo-verde li{
+            background-color: green;
+        }
+
+        .fundo-azul li{
+            background-color: lightblue;
+        }
+
+        li{
+            color: red;
+        }
+
+        .fundo-verde #sublist-01 li{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Combinador: ele especifica qual o tipo de relação entre dois seletores
+        1. Combinador descendente (espaço), usado para utilizar o css descente(filho) de algum seletor
+        2. Combinador filho (>)
+        3. Combinador irmão adjacente (+)
+        4. Combinador irmão em geral (~)
+
+        [SELETOR] [COMBINADOR] [SELETOR]
+    -->
+
+    <ul>
+        <li class="fundo-verde" id="lista-item01">
+        <div>Item 1</div>
+        <ul id="sublist-01">
+            <li>Subitem A</li>
+            <li>Subitem B</li>
+        </ul>
+
+            <li class="fundo-verde" id="lista-item02">
+                <div>Item 2</div>
+                <ul id="sublist-02">
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+
+            <li class="fundo-azul" id="lista-item03">
+                <div>Item 3</div>
+                <ul id="sublist-03">
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+        <ul>
+
+        
+
+        </ul>
+    </li>
+    </ul>
+</body>
+</html>

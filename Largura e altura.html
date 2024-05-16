@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largura x Altura</title>
+
+    <!--
+        Propriedades básicas do CSS:
+
+        width: largura
+        height: altura
+
+        Palavras reservadas
+
+        width: auto, vai realizar a largura automática conforme vai aumentando os diminuindo a largura do text.
+        width: initial, vai aplicar para qualquer propriedade o valor padrão
+
+        inherit: ela vai difinir o valor da nossa propriedade de acordo com nosso elemento pai
+
+    -->
+    <style>
+        #div-01{
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+        }
+
+        #div-02{
+            background-color: lightgreen;
+            height: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-01">
+        Sou a div 01
+        <div id="div-02">
+            Sou a div 02
+        </div>
+    </div>
+</body>
+</html>

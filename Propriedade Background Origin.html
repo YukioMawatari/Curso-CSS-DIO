@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Background-origin: é possível definir qual o ponto de origin da nossa img
+    
+        background-origin: padding-box; a img de fundo vai cobrir a área q nss padding ocupa
+        background-origin: border-box; a img de fundo vai cobrir tanto a área da borda qnt do padding
+        background-origin: content-box; a img vai cobrir a área relacionada ao conteudo do nss elemento
+    -->
+    <style>
+        body{
+            background-color: pink;
+        }
+        div{
+            margin-bottom: 30px;
+        }
+
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            background-image: url('./img/montanha.jpg');
+            background-size: 100% 100%;
+            border: 15px dashed palegreen;
+            padding: 30px;
+        }
+
+        #padding-box{
+            background-origin: padding-box;
+        }
+    </style>
+</head>
+<body>
+
+    <code>Background-origin: padding-box;</code>
+    <div class="exemplo" id="padding-box"></div>
+
+    <code>Background-origin: border-box;</code>
+    <div class="exemplo" id="border-box"></div>
+
+    <code>Background-origin: content-box;</code>
+    <div class="exemplo" id="content"></div>
+</body>
+</html>

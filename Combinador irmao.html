@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Filho</title>
+    <style>
+       div + p{
+        color: tomato;
+       }
+
+       .fundo-verde ~ p{
+        background: green;
+       }
+    </style>
+</head>
+<body>
+     <!--
+        Combinador: ele especifica qual o tipo de relação entre dois seletores
+        1. Combinador descendente (espaço), usado para utilizar o css descente(filho) de algum seletor
+        2. Combinador filho (>) ele vai selecionar todos os elementos que são imediatos, os seja, o filho direto do seletor especificado a esquerda
+        3. Combinador irmão adjacente (+) ele é usado para um elemento diretamente ao seletor a esquerda, ou seja o proximo elemento que a gente determinar o irmão
+        4. Combinador irmão em geral (~) ele é usado para utilizar o irmao em geral, ou seja, meu é div e o geral é p, vai aplicar para todas os p 
+
+        [SELETOR] [COMBINADOR] [SELETOR]
+    -->
+
+    <div class="fundo-verde">
+        <p>Paragrafo 1 dentro da div</p>
+        <p>Paragrafo 2 dentro da div</p>
+        <span>
+            <p>Paragrafo 3 dentro do span</p>
+        </span>
+    </div>
+
+    <div class="fundo-verde">
+        <p>Paragrafo 10 dentro da div</p>
+        <p>Paragrafo 22 dentro da div</p>
+        <span>
+            <p>Paragrafo 33 dentro do span</p>
+        </span>
+    </div>
+
+    <div class="fundo-azul">
+        <p>Paragrafo 100 dentro da div</p>
+        <p>Paragrafo 222 dentro da div</p>
+        <span>
+            <p>Paragrafo 333 dentro do span</p>
+        </span>
+    </div>
+    <p>Paragrafo 4 fora da div</p>
+    <p>Paragrafo 5 fora da div</p>
+</body>
+</html>

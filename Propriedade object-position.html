@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-position</title>
+
+    <!--Object-position: ela especificar como uma imagem ou video ele deve ser posicionado tanto verticalmente, quando horizontamente no container
+        object-position: x(horizontal) y(vertical), é possivel trabalhar com valores negativos também
+
+        object-position: left - para esquerda
+        object-position: right - para direita
+        object-position: center - centro
+        object-position: top - vai ver mais o topo da imagem
+        object-position: bottom - vai ver mais a parte debaixo da img
+        
+    -->
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 70px 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>Propriedade <code>object-fit</code></h1>
+
+<code>object-fit: fill;</code>
+
+<div>
+    <img src="dio.png" alt="Logo da DIO" id="fill">
+</div>
+</body>
+</html>

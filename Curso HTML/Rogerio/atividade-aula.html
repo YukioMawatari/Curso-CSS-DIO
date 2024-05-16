@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de CSS Básico</title>
+    <link rel="icon" href="https://www.univem.edu.br/inscricao/vestibular/assets/img/logo_univem_digital.png" type="image/png">
+    <style>
+
+        h1 {
+            font-family: sans-serif;
+        }
+        a {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid;
+            background-color: blue;
+            text-decoration: none;
+        }
+
+        .destacado {
+            color: red;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .button {
+
+            font-family: sans-serif;
+            color: white;
+            
+        }
+
+        #conteudo {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        #lista {
+
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+        }
+
+        #lista li {
+
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        #lista li:hover {
+
+            background-color: #C0C0C0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+
+        <h1>Bem-vindo ao Exercício de CSS Básico</h1>
+        <p>Este é um parágrafo<span class="destacado"> destacado</span></p>
+        <a href="#"><span class="button">Clique aqui</span></a>
+
+    </div>
+
+
+    <div id="conteudo">
+
+        <h1>Testando ID</h1>
+        <p>Mais um parágrafo!</p>
+
+    </div>
+
+    <ul id="lista">
+
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+
+    </ul>
+
+</body>
+</html>

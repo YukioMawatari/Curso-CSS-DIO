@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Kbd Pre</title>
+    <style>
+        kbd{
+            border: solid 1px black;
+        }
+        pre{
+            background-color: #f1f1f1;
+        }
+        pre > code{
+            color: red
+        }
+        pre > p{
+            font-style: italic;
+            color: gray;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!--KBD server para mostrar o que seria uma tecla de teclado-->
+    <p>Para copiar essa info, press <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+
+    <!--CODE server para mostrar comandos CSS-->
+    <p>Para trocar o fundo de uma elemento, utilize o comando <code>background-color</code></p>
+
+    <!--PRE você pode agrupar varios códigos e deixa tudo a font monospacing-->
+    <!--Font Monospacing significa que todas as letrar tem a mesma largura-->
+    <p>Comando completo para alterar a cor de fundo</p>
+    <pre>
+        <p>// Neste momento você aplica desta forma</p>
+        <code>
+            code{
+                background-color: #f1f1f1;
+                color: red;
+            }
+        </code>
+    </pre>
+</body>
+</html>

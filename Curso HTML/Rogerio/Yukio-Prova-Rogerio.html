@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Rogério HTML</title>
+    <link rel="icon" href="https://www.univem.edu.br/img/site/logo.png" type="image/png">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header nav{
+            background-color: #9400D3;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+        }
+        nav ul{
+            padding: 5px;
+            height: 10px;
+            list-style: none;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        section{
+           display: flex;
+        }
+        .img01{
+            padding: 10px;
+            flex: 1;
+            margin: 0 20px;
+            background-color: #A9A9A9;
+        }
+        .img02{
+           padding: 10px;
+           flex: 1;
+           margin: 0 20px;
+           background-color: #A9A9A9;
+        }
+        .img03{
+           padding: 10px;
+           margin: 0 20px;
+           background-color: #A9A9A9;
+           flex: 1;
+        }
+        main{
+            padding: 20px 30px 40px;
+        }
+        nav ul li a:hover{
+            background-color: purple;
+            border-radius: 50px;
+        }
+
+        form{
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+        }
+
+        input, textarea{
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .enviar, .limpar{
+            cursor: pointer;
+            padding: 5px;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            width: 40%;
+            margin: 0px 5px;       
+        }
+        .botao-center > .enviar:hover{
+            background-color: green;
+        }
+
+        .botao-center > .limpar:hover{
+            background-color: tomato;
+        }
+
+        .botao-center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .datas{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 5px 5px 0px;
+            width: 95%;
+            padding: 4px;
+        }
+
+        [type="date"]{
+            margin: 0 10px;
+            border: 1px solid black;
+            padding: 8px;
+            margin: 5px 10px 20px 0px;
+        }
+
+        [type="time"]{
+            margin: 0 10px;
+            border: 1px solid black;
+            padding: 8px;
+            margin: 5px 0px 20px 10px;
+        }
+        [type="number"]{
+            width: 35%;
+            padding: 8px;
+            margin: 0px 20px 20px 0px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        [type="file"], [type="text"], [type="email"], [type="search"], textarea{
+            width: 95%;
+            padding: 8px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"], input[type="radio"]{
+            display: inline-flex;
+            width: 30%;
+            padding: 8px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header id="Home">
+        <nav>
+            <h1>Layout Simples</h1>
+    <ul>
+        <li>
+            <a href="#Home">Home</a>
+            <a href="#Sobre">Sobre</a>
+            <a href="#Contato">Contato</a>
+        </li>
+    </ul>
+        </nav>
+    </header>
+
+<main id="Sobre">
+<section>
+    <div class="img01">
+        <h2>Tópico 1</h2>
+        <p>Neste tópico você colocará uma imagem que se encontra hospedada em uma página qualquer.</p>
+        <img src="https://www.univem.edu.br/storage/posts/December2023/yJTy5s3btCNG7OAfE6ug.png" alt="13° Congresso de Pesquisa Científica" width="100%">
+    </div>
+    <div class="img02">   
+        <h2>Tópico 2</h2>
+        <p>Neste tópico você colocará uma imagem que se encontra hospedada em uma página qualquer.</p>
+        <img src="https://www.univem.edu.br/storage/posts/March2024/OSlp6zgpKPPLxzwGVd41.jpg" alt="UNIVEM Brilha no Prêmio “Não Aceito Corrupção”: Alunos e Professor Alcançam Top 10 Entre 238 Competidores" width="100%">
+    </div> 
+
+    <div class="img03">   
+        <h2>Tópico 3 - Formulário</h2>
+            <form action="url-destino" method="get">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite o seu nome" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="aulahtml@gmail.com" required>
+                <br>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+
+                <label for="messagem">Mensagem:</label>
+                <textarea name="message" id="message" minlength="5" maxlength="200" rows="8" cols="30" required readonly>Texto do textarea</textarea>
+                <br>
+
+
+                <div class="datas">
+                    <input type="date" name="dia">
+                    <input type="time" name="horas">
+                </div>
+                <br>
+                <input type="number" name="quantidade" min="10" max="30" step="2">
+                <br>
+
+                <input type="range" name="volume" min="50" max="100">
+                <br>
+
+                <input type="color" name="cor">
+                <br>
+
+                <input type="file" name="arquivos" multiple>
+                <br>
+
+                <input type="search" name="pesquisa">
+                <br>
+
+                <input type="checkbox" name="Selecione">
+                <input type="checkbox" name="Selecione">
+                <input type="checkbox" name="Selecione">
+                <br>
+
+                <input type="radio" name="option">
+                <input type="radio" name="option">
+
+
+                <div class="botao-center">
+                <button class="enviar" type="submit"><strong>Enviar</strong></button>
+                <button class="limpar" type="reset"><strong>Limpar</strong></button>
+                </div>          
+            </form>
+        </div> 
+</section>
+</main>
+
+<footer id="Contato">
+    <p>Avaliação de Front-End Ciência da Computação e Sistema de informação</p>
+</footer>
+
+</body>
+</html>

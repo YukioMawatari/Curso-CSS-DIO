@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Word-Break</title>
+    <!--
+        word-break: normal; - ocorre a quebra de linha quando tem espaço em branco ou hifen (-)
+        word-break: break-all; - evitando que o texto ultrapasse os limites do nosso elemento, a palavra é quebrada em qualquer caractere
+        para que não ultrapasse o limite determinado.
+        word-break: keep-all; - geralmente usado em linguagens orientais, pelo motivo que elas não devem ocorrer quebra de linha e que fique tudo na mesma linha
+
+    -->
+    <style>
+        .exemplo{
+            width: 100px;
+            background-color: aquamarine;
+        }
+
+        #normal{
+            word-break: normal;
+        }
+
+        #break-all{
+            word-break: break-all;
+        }
+
+        #keep-all{
+            word-break: keep-all;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>Word-Break</code></h1>
+    <p>Define quando o texto deve conter quebra de linha.</p>
+
+    <code>word-break: normal;</code>
+    <p class="exemplo" id="normal">
+        Lorem ipsum dolor sit ametconsecteturadipisicingelit. 
+        Aspernatur praesentium inventorenihilmolestiasdicta 
+        quibusdam recusandae omnis fugiat quos unde 
+        voluptatibus maiores reprehenderit, accusamus commodi, 
+        assumenda in, laudantium harum perspiciatis?
+    </p>
+
+    <code>word-break: break-all;</code>
+    <p class="exemplo" id="break-all">
+        Lorem ipsum dolor sit ametconsecteturadipisicingelit. 
+        Aspernatur praesentium inventorenihilmolestiasdicta 
+        quibusdam recusandae omnis fugiat quos unde 
+        voluptatibus maiores reprehenderit, accusamus commodi, 
+        assumenda in, laudantium harum perspiciatis?
+    </p>
+
+    <code>word-break: keep-all;</code>
+    <p class="exemplo" id="keep-all">
+        Lorem ipsum dolor sit ametconsecteturadipisicingelit. 
+        Aspernatur praesentium inventorenihilmolestiasdicta 
+        quibusdam recusandae omnis fugiat quos unde 
+        voluptatibus maiores reprehenderit, accusamus commodi, 
+        assumenda in, laudantium harum perspiciatis?
+    </p>
+</body>
+</html>

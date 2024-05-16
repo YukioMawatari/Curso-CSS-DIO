@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Básico sem Semântica</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/png">
+</head>
+<body>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header{
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li{
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        main{
+            background-color: #E5E5E5;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            min-height: 80vh;
+        }
+
+        aside{
+            background-color: #F4F4F4;
+            padding: 20px;
+        }
+
+        section{
+            padding: 20px;
+        }
+
+        footer{
+            background-color: #333;
+            text-align: center;
+            color: white;
+            padding: 10px 20px;
+            clear: both;
+        }
+        aside ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        aside ul a{
+            text-decoration: none;
+            color: black;
+        }
+
+        aside ul li:hover{
+            background-color: #d3d3d3;
+        }
+
+        aside ul li{
+            padding: 10px;
+            margin: 0;
+        }
+        .box{
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px
+        }
+        .box h3{
+            margin-top: 0;
+        }
+        .conteudo-container{
+            display: flex;
+            align-items: top;
+        }
+        .imagem-container{
+            flex: 0 0 auto;
+            margin-right: 20px;
+        }
+        .texto-container{
+            flex: 1;
+        }
+        .botao-link{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .botao-link:hover{
+            background-color: #0056b3;
+        }
+        .efeito-1:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .efeito-1{
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+        .shadow{
+            text-shadow: 2px 2px 2px #1C1C1C;
+        }
+        section{
+            display: none;
+        }
+        section:target{
+            display: block;
+        }
+        .efeito-2:hover{
+            filter: drop-shadow(16px 16px 20px red) invert(75%);
+            transition: transform 0.3s ease;
+        }
+        .efeito-2{
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+        .efeito-3:hover{
+            filter: drop-shadow(16px 16px 20px red) invert(75%);
+            transition: transform 0.3s ease;
+        }
+        .efeito-3{
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+
+    </style>
+    <header>
+        <nav>
+            <h1>&#128511;Meu site</h1>
+            <ul>
+
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Barra Lateral</h2>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+        </aside>
+        <section id="inicio">
+            <h2>Conteúdo Principal</h2>
+            <div class="box">
+                    <h3>Seção 1</h3>
+                    <div class="conteudo-container">
+                        <div class="imagem-container">
+                            <img class="efeito-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_WRU3LoEaFGAv7sVFtY5BWSdA0e48uYkFQ&s" width="500">
+                        </div>
+                        <div class="texto-container">
+                            <h2 class="shadow"><strong>&#128680;AGORA O HEXA VEM&#128680;</strong></h2>
+                            <blockquote>"O futebol foi introduzido no Brasil no final do século XIX, por Charles Miller. Esse estudante paulista retornou da Inglaterra em 1894 e trouxe na bagagem diversos artigos, como bolas, uniformes e um livro com as regras estabelecidas. Por conta disso, Charles Miller é atualmente considerado o pai do esporte no Brasil."</blockquote>
+                            <p>Mentiras e fanfics do Pablo Marçal (coach evangélico) viralizam. AS MENTIRAS INCLUEM: <strong>UM ENGENHEIRO TER DITO PRA ELE QUE QUER COLOCAR O CÉREBRO DELE EM UM ROBÔ PORQUE ELE É MUITO INTELIGENTE. SALVOU UM HELICÓPTERO PORQUE SABE PILOTAR MELHOR QUE O PILOTO.</p></strong>
+                            <div class="botao-div">
+                                <a href="#" class="botao-link">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Conteúdo Principal</h2>
+            <div class="box">
+                    <h3>Seção 2</h3>
+                    <div class="conteudo-container">
+                        <div class="imagem-container">
+                            <img class="efeito-2" src="data:image/jpeg;base64,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" width="500" height="380">
+                        </div>
+                        <div class="texto-container">
+                            <h2 class="shadow"><strong>&#128073;NÃO POSSO ASSINAR POR VOCÊ&#128072;</strong></h2>
+                            <blockquote>"A montadora Nissan, realizou em sua linha Skyline, uma obra prima que é o Nissan Skyline R34 GT-R. Esta é a versão esportiva do próprio Skyline. Esta versão conserva alguns dos melhores pontos de seu antecessor.
+
+                                Portanto, ela conta com um motor Nissan biturbo de 6 cilindros modelo RB26DETT, o mesmo modelo da 3º geração do Skyline. A montadora tinha um modelo nomeado GT-R, também conhecido como Godzilla, que em 1973, deixou de ser produzido. A sigla GT-R só foi trazida de volta com o modelo Nissan Skyline GT-R R32, antepassado do GT-R R34.
+                                
+                                Com o passar dos anos, de 1980 para 1998 foi criada uma nova versão contando com melhorias, a GT-R R33 e, finalmente, em 1998, combinaram o melhor das versões anteriores, contando com a potência do GT-R R33 e o tamanho perfeito do GT-R R32."</blockquote>
+                            <p>Mentiras e fanfics do Pablo Marçal (coach evangélico) viralizam. AS MENTIRAS INCLUEM: <strong>UM ENGENHEIRO TER DITO PRA ELE QUE QUER COLOCAR O CÉREBRO DELE EM UM ROBÔ PORQUE ELE É MUITO INTELIGENTE. SALVOU UM HELICÓPTERO PORQUE SABE PILOTAR MELHOR QUE O PILOTO.</p></strong>
+                            <div class="botao-div">
+                                <a href="#" class="botao-link">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contato">
+            <h2>Conteúdo Principal</h2>
+            <div class="box">
+                    <h3>Seção 3</h3>
+                    <div class="conteudo-container">
+                        <div class="imagem-container">
+                            <img class="efeito-3" src="https://cdn.dicionariopopular.com/imagens/meme-do-para-que4.jpg" width="500" height="380">
+                        </div>
+                        <div class="texto-container">
+                            <h2 class="shadow"><strong>&#128680;AGORA O HEXA VEM&#128680;</strong></h2>
+                            <blockquote>"O futebol foi introduzido no Brasil no final do século XIX, por Charles Miller. Esse estudante paulista retornou da Inglaterra em 1894 e trouxe na bagagem diversos artigos, como bolas, uniformes e um livro com as regras estabelecidas. Por conta disso, Charles Miller é atualmente considerado o pai do esporte no Brasil."</blockquote>
+                            <p>Mentiras e fanfics do Pablo Marçal (coach evangélico) viralizam. AS MENTIRAS INCLUEM: <strong>UM ENGENHEIRO TER DITO PRA ELE QUE QUER COLOCAR O CÉREBRO DELE EM UM ROBÔ PORQUE ELE É MUITO INTELIGENTE. SALVOU UM HELICÓPTERO PORQUE SABE PILOTAR MELHOR QUE O PILOTO.</p></strong>
+                            <div class="botao-div">
+                                <a href="#" class="botao-link">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Rodapé &copy; 2024</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!--: ela determina como uma imagem ou video deve ser redimencionado 
+        para caber dentro do container (espaço determinado ou caixa do elemento), 
+        em inglês a palavra significa ajuste de objeto  
+    
+        : fill; - a imagem fica distorcidade, ou seja, ela vai esticar ou ficar cumprimida para preencher o tamanho que foi definido.
+        : contain; - a imagem se mantem em seu tamanho original, mas ela vai ser redimencionada para caber no tamanho que foi definido.
+        : cover; - a imagem vai preencher todo nosso container para caber no espaço, porém ao invez de ficar distorcidade, ela vai cortar o espaço da imagem que ultrapassar o espaço definido.
+        : none; - a imagem vai ignorar totalmente a largura e altura definida no elemento pai e vai se manter em seu tamanho original.
+        : scale-down; - a imagem vai exibir uma imagem com as configurações do container ou none, vai depender qual seria a configuração menor.
+    -->
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain{
+            : contain;
+        }
+
+        #cover{
+            : cover;
+        }
+
+        #none{
+            : none;
+        }
+
+        #scale-down{
+            : scale-down;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code></code></h1>
+
+    <code>: fill;</code>
+
+    <div>
+        <img src="dio.png" alt="Logo da DIO" id="fill">
+    </div>
+
+    <br />
+
+    <code>: contain;</code>
+
+    <div>
+        <img src="dio.png" alt="Logo DIO" id="contain">
+    </div>
+
+    <br />
+
+    <code>: cover;</code>
+
+    <div>
+        <img src="dio.png" alt="Logo DIO" id="cover">
+    </div>
+
+    <br />
+
+    <code>: none;</code>
+
+    <div>
+        <img src="dio.png" alt="Logo DIO" id="none">
+    </div>
+
+    <br />
+
+    <code>: scale-down;</code>
+
+    <div>
+        <img src="dio.png" alt="Logo DIO" id="scale-down">
+    </div>
+</body>
+</html>

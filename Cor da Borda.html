@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo da borda</title>
+    <!--border-width: essa propriedade define a espessura da nossa borda, o contorno
+        border-width: thin; cria uma borda fina, essa borda corresponde a 1px.
+        border-width: medium; cria uma borda de 3px.
+        border-width: thick; cria uma borda de 5px.
+        border-width: cima direita embaixo esquerda 
+
+        border-style: define o tipo de contorno, o estilo dele.
+        border-style: none; valor padrão ou seja sem nenhuma estilo de borda
+        border-style: dashed; cria uma borda com vários traços.
+        border-style: dotted; cria uma borda com vários pontos.
+        border-style: double; cria uma borda com uma outra borda secundária dentro.
+        border-style: groove; cria uma borda em formato 3d.
+        border-style: ridge; cria uma borda que inverte as cores para dar impressão que o elemento está um pouco elevado.
+        border-style: inset; cria uma borda que a impressão que o elemento está afundado (pressionado)
+        border-style: outset; cria uma borda que da impressão que o elemento está saindo da tela.
+        border-style: é possivel aplicar uma borda mista, com vários estilo diferentes, exemplo: border-style: double groove solid;
+        
+        border-color: serve para alterar as cores da nossa borda, caso não definir a cor, ela pega a cor definido na propriedade color do elemento
+
+    -->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .exemplo{
+            width: 200px;
+            height: 200px;
+            background-color: palevioletred;
+            border-style: groove;
+            border-width: 10px 20px ;
+            border-color: green pink blue gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações da nossa borda, através das propriedades:</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <div class="exemplo"></div>
+</body>
+</html>

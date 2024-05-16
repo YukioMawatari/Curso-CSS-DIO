@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade White-Space</title>
+
+    <!--white-space: definide como os espaços em branco vai se comportar quando ele está aplicado em determinado elemento
+        white-space: normal; - valor padrão, caso estiver com vários espaços em branco em sequencia, vai ficar apenas um espaço em branco quando estiver "normal"
+        as quebras de linhas são ignoradas também, só ocorre a quebra de linha quando o texto chega no final do espaço limitado.
+
+        white-space: nowrap; - caso estiver com vários espaços em branco em sequencia, vai ficar apenas um espaço e ignora os demais espaços,
+        a quebra de linha é totalmente ignorada e seu texto fica em apenas uma linha, sem nenhuma quebra mesmo atingindo o limite do espaço.
+
+        white-space: pre; os espaços em branco determinado no texto vão permanecer, as quebras de linhas vão se quebrar apenas em novas linhas (quando quebramos a linhas no html) ou se utilizar a tag BR
+
+        white-space: pre-line;- caso estiver com vários espaços em branco em sequencia, vai ficar apenas um espaço e ignora os demais espaços,
+        as quebras de linhas vão permanecer, tanto as quebras do html, quanto a quebra quando o texto atinge o limite do espaço determinado.
+
+        white-space: pre-wrap; - os espaços em branco vão permanecer, e texto vão ser quebrado quando necessario (chegar no limite do espaço),
+        e quando tiver uma quebra de linha no HTML.
+
+        white-space: break-spaces; - os espaços em branco vão permanecer, e texto vão ser quebrado quando necessario (chegar no limite do espaço),
+        e quando tiver uma quebra de linha no HTML. A diferença do break-spaces é que quando tiver uma sequencia de espaços os mesmos
+        vão permanece, porem caso chegue a atingir o limite determinado, os espaços vão continuar na próxima linha.
+
+
+    -->
+    <style>
+        h2{
+            font-style: italic;
+        }
+
+        .exemplo{
+            width: 200px;
+            background-color: chartreuse;
+        }
+
+        span{
+            background-color: seagreen;
+            color: white;
+        }
+
+        #nowrap{
+            white-space: nowrap;
+        }
+
+        #pre{
+            white-space: pre;
+        }
+
+        #pre-line{
+            white-space: pre-line;
+        }
+
+        #pre-wrap{
+            white-space: pre-wrap;
+        }
+
+        #break-spaces{
+            white-space: break-spaces;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>White-Space</code></h1>
+    <p>Define como os espaços em branco do texto de um determinado elemento é tratado</p>
+
+    <h2>Exemplos:</h2>
+
+<code>white-space: normal;</code>
+<p class="exemplo">
+    <span>       Lorem    ipsum dolor sit amet consec    tetur adipisicing elit. Dolor numquam officia necessitatibus deleniti quod,    
+        accusantium neque, ipsa culpa deserunt consequatur    inventore! Aspernatur non possimus fugit laudantium excepturi sapiente dolores exercitationem?</span>
+</p>
+
+<code>white-space: nowrap;</code>
+<p class="exemplo" id="nowrap">
+    <span>       Lorem ipsum dolor sit, amet       consectetur adipis  icing elit. Recusandae magnam possimus est velit iure eius officia   
+        blanditiis! Maiores tempora provident sapiente eos, quisquam expedita, atque tempore vel, ut laborum nobis?</span>
+</p>
+
+<code>white-space: pre;</code>
+<p class="exemplo" id="pre">
+    <span>
+        Lorem ipsum dolor, sit amet conse  ctetur adipisicing elit. Praesentium ipsa inventore recusandae ducimus nihil 
+        consect etur asperiores, eligendi     repellat voluptas.         Exercitationem, eius neque ratione   nulla mollitia deserunt ullam enim laudantium obcaecati!
+    </span>
+</p>
+
+<code>white-space: pre-line</code>
+<p class="exemplo" id="pre-line">
+    <span>Lorem        ipsum dolor sit amet consec    tetur adipisicing elit. Dolor numquam officia necessitatibus deleniti quod,    
+        accusantium neque, ipsa culpa deserunt consequatur           inventore! Aspernatur non possimus fugit laudantium excepturi sapiente dolores exercitationem?</span>
+</p>
+
+<code>white-space: pre-wrap;</code>
+<p class="exemplo" id="pre-wrap">
+    <span>Lorem    ipsum dolor sit amet consec    tetur adipisicing elit. Dolor numquam officia necessitatibus deleniti quod,    
+        accusantium neque, ipsa culpa deserunt consequatur    inventore! Aspernatur non possimus fugit laudantium excepturi sapiente dolores exercitationem?</span>
+</p>
+
+<code>white-space: break-space;</code>
+<p class="exemplo" id="break-spaces">
+    <span>Lorem    ipsum dolor sit amet consec    tetur adipisicing elit. Dolor numquam officia necessitatibus deleniti quod,    
+        accusantium neque, ipsa culpa deserunt consequatur    inventore!        Aspernatur non possimus fugit laudantium excepturi sapiente dolores exercitationem?</span>
+</p>
+</body>
+</html>

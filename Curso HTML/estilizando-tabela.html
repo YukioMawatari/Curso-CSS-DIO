@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Estilizada</title>
+    <style>
+        table thead th{
+            border: dashed 1px black;
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: lightgray;
+            text-align: center;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: #F1F;
+        }
+        table tbody tr:hover td{
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table width="200" align="center" cellspacing="0" cellpading="5">
+        <caption>Tabela de idades</caption>
+   <thead>
+        <tr>
+            <th title="Nome Completo">Name</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <th colspan="2">Minha tabela</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Minha tabela</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Yukio</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>89</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>3</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

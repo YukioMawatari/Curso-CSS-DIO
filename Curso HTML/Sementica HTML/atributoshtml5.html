@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1 contenteditable>Meu titulo</h1>
+        <label>Nome: </label><input type="text" name="name" required autofocus placeholder="João" /><br>
+        <label>Cargo: </label>
+        <select name="role" multiple>
+            <option value="">Selecione o cargo</option>
+            <option value="Admin">Admin</option>
+            <option selected value="CEO">CEO</option>
+            <option value="Funcionario">Funcionario</option>
+        </select><br>
+        <label>Senha: </label> <input type="password" name="pass" required /><br>
+        <label>Adicional</label><br>
+        <textarea minlength="5" maxlength="20" name="message" rows="10" cols="30"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito de Sombra nos Elementos</title>
+    <!--box-shadow: horizontal / vertical / valor do desfoque / propagação da sombra / cor da sombra;
+
+        box-shadow: inset horizontal / vertical / valor do desfoque / propagação da sombra / cor da sombra; - o inset
+        faz com que a sombra fique dentro do elemento
+
+        box-shadow: box-shadow: inset 10px 10px 10px red - criando sombra interna vermelha, 10px 10px 10px black; - criando sombra
+        externa preta
+        
+        filter: drop-shadow(10px 10px 5px gray); - aplicando sombra em volta do nosso elemento, dentro do elemento
+    -->
+   <style>
+    .ex1{
+        width: 200px;
+        height: 200px;
+        border: 10px solid red;
+        margin: 20px auto;
+        background-color: tomato;
+        box-shadow: 10px 10px 10px 5px red;
+    }
+
+    .ex2{
+        width: 200px;
+        height: 200px;
+        border: 10px solid red;
+        margin: 20px auto;
+        background-color: tomato;
+        box-shadow: inset 10px 10px 10px red, 10px 10px 10px black;
+    }
+
+    img{
+        width: 500px;
+        height: 200px;
+        margin: 20px auto;
+        object-fit: cover;
+        filter: drop-shadow(10px 10px 5px gray);
+    
+    }
+   </style>
+</head>
+<body>
+    <h1>Propriedade <code>box-shadow</code></h1>
+
+    <div class="ex1"></div>
+    <div class="ex2"></div>
+    <img src="https://hermes.digitalinnovation.one/users/company/3a52d6e3-a58c-4755-89c9-fbc093a8868f.png" alt="">
+</body>
+</html>

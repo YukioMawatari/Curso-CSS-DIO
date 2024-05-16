@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Text-Overflow</title>
+    <style>
+        .exemplo{
+            width: 200px;
+            color: black;
+            background-color: yellow;
+        }
+
+        p{
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #clip{
+            text-overflow: clip;
+        }
+
+        #elipses{
+            text-overflow: ellipsis;
+        }
+
+        #string{
+            text-overflow: ('Vermais');
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>Text-Overflow</code></h1>
+        <p>Define a orientação do texto (vertical e horizontal)</p>
+    <code>text-overflows: clip;</code>
+    <p class="exemplo" id="clip">
+        Lorem ipsum dolor 
+        Aspernatur praesentium inventorenihilmolestiasdicta 
+    </p>
+
+    <code>text-overflows: elipses;</code>
+    <p class="exemplo" id="elipses">
+        Lorem ipsum dolor 
+        Aspernatur praesentium inventorenihilmolestiasdicta 
+    </p>
+
+    <code>text-overflows: string;</code>
+    <p class="exemplo" id="string">
+        Lorem ipsum dolor 
+        Aspernatur praesentium inventorenihilmolestiasdicta 
+    </p>
+</body>
+</html>

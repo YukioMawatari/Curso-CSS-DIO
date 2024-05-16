@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Word-Wrap</title>
+    <style>
+        .exemplo{
+            width: 100px;
+            color: white;
+            background-color: blueviolet;
+        }
+
+        #normal{
+            word-wrap: normal;
+        }
+
+        #break-word{
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>Word-Wrap</code></h1>
+    <p>Define, caso uma palavra seja muito grande para caber em uma linha, se ela será quebrada em qualquer caractere para que uma parte fique na linha e o restante no próxima, ou se não, toda palavra deve ficar na mesma linha e ultrapassar os limites que definimos para o elemento.</p>
+
+    <code>word-wrap: normal;</code>
+    <p class="exemplo" id="normal">
+        Lorem ipsum dolor sit amet consectetur adipisicingelit. 
+        Aspernatur praesentium inventore nihil molestias dicta 
+        quibusdam recusandae omnis fugiat quos unde 
+        voluptatibus maiores reprehenderit, accusamus commodi, 
+        assumenda in, laudantium harum perspiciatis?
+    </p>
+
+    <code>word-wrap: break-word;</code>
+    <p class="exemplo" id="break-word">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aspernatur praesentium inventore nihil molestias dicta 
+        quibusdam recusandae omnis fugiat quos unde 
+        voluptatibus maiores reprehenderit, accusamus commodi, 
+        assumenda in, laudantium harum perspiciatis?
+    </p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Border Image Width</title>
+    <!--
+        border-image-source: conseguimos definir o caminho da nossa img para criar a borda no nosso elemento, para essa propriedade funcionar é preciso aplicar uma borda nosso elemento
+        border-image-slice: é possível dividir nossa img em regiões para trabalhar ela dentro da nossa borda.
+        border-image-width: é possível definir a largura da imagem da nossa borda.
+        border-image-width: top direita baixo esquerda
+        border-imgame-width: auto; aplica de acordo com o tamanho da nossa ig
+
+    -->
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .exemplo{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            border: 40px solid;
+        }
+
+        #exemplo-1{
+            border-image-source: url('./img/dio.png');
+        }
+
+        #exemplo-2{
+            border-image-source: linear-gradient(blue, green);
+            border-image-slice: 20;
+            border-image-width: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas com imagens</h1>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <figure>
+        <img src="./img/slice.png" alt="" width="550px" height="550px">
+        <p>Regiões de 1, 2, 3 e 4 são os cantos da nossa imagem e cada uma dessas fatias são usados uma unica vez para compor nossa img</p>
+        <p>Regiões 5, 6, 7 e 8 são regiões que formam nossa borda do topo, direita, esquerda e lado inferior, elas podem ser repetidas ou redimencionadas </p>
+        <p>Região 9 por padrão ela é uma fadia descartada da nossa img, pirém é possivel utiliza-la passando o atributo "fill"</p>
+    </figure>
+    <div id="exemplo-1" class="exemplo">
+    </div>
+    <br>
+    <div id="exemplo-2" class="exemplo">
+    </div>
+    <br>
+</body>
+</html>

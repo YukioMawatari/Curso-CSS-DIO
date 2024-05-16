@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetiçao das Imagens de Fundo</title>
+    <!--Quando a imagem é menor que o elemento, ela possui um comportamento de se repetir, é possivel alterar esse comportamento com:
+        background-repeat
+
+        background-repeat: repeat; - vai fazer que a img se repita lado a lado, tanto horizontalmente, quanto verticalmente.
+        background-repeat: repeat-x; - vai fazer que a img se repita apenas horizontalmente, no eixo X
+        background-repeat: repeat-x; - vai fazer que a img se repita apenas verticalmente, no eixo Y
+        background-repeat: space; vai adicionar um espaço em branco tanto horizontamente quanto verticalmente, para que a mesma não precise ser cortada
+        background-repeat: round; - a img se repete em todas as direções, mas para q isso aconteça a img de fundo está redimencionada para que a img consiga se repetir dentro do elemnto
+    -->
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            background-image: url('./img/montanha.jpg');
+            background-size: 120px;
+            border: 1px solid black;
+        }
+
+        #repeat-x{
+            background-repeat: repeat-x;
+        }
+        #repeat-y{
+            background-repeat: repeat-y;
+        }
+        #space{
+            background-repeat: space;
+        }
+        #round{
+            background-image: round;
+        }
+        #no-reapead{
+            background-image: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <code>background-repeat: repeat;</code>
+    <div class="exemplo">
+    </div>
+
+    <code>background-repeat: repeat-x;</code>
+    <div id="repeat-x" class="exemplo">
+    </div>
+
+    <code>background-repeat: repeat-y;</code>
+    <div id="repeat-y" class="exemplo">
+    </div>
+
+    <code>background-repeat: space;</code>
+    <div id="space" class="exemplo">
+    </div>
+
+    <code>background-repeat: round;</code>
+    <div id="round" class="exemplo">
+    </div>
+
+    <code>background-repeat: no-reapead;</code>
+    <div id="no-reapead" class="exemplo">
+    </div>
+</body>
+</html>

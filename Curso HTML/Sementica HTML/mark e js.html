@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark com JS</title>
+</head>
+<body>
+    <input type="text" id="busca"><br>
+    <p id="descricao"> A descrição do curso explica para os alunos em potencial do que se trata o curso. O resumo é amplamente responsável por convencê-los de que seu curso -- e somente ele -- mudará suas vidas! Na descrição do curso, recomendamos fornecer informações sobre: 1> o conteúdo do curso e 2> como os alunos se beneficiarão desse conteúdo.</p>
+</body>
+<script>
+    var searchField = document.getElementById('busca');
+    var descriptionObject = document.getElementById('descricao');
+    var textToSearch = descriptionObject.innerHTML;
+
+    function realizaBusca(busca){
+        const regex = new RegExp ('(${busca})(?!(.(?!<mark>)) *</mark>)+', 'ig')
+        const ocurrences = textToSearch.match(regex);
+        descriptionObject.innerHTML = textToSearch.replace(regex, '<mark>${busca}</mark>')
+    }
+
+    searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+
+</script>
+</html>

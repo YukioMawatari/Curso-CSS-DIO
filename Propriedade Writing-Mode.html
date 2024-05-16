@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Writing-Mode</title>
+    <!--writing-mode: horizontal-tb; - vai fazer com que o texto flua da esquerda para direita
+         writing-mode: vertical-rl; - vai fluir de cima para baixo
+
+    -->
+    <style>
+        .exemplo{
+            width: 120px;
+            height: 120px;
+            background-color: aquamarine;
+        }
+        
+        #horizontal-tb{
+            writing-mode: horizontal-tb;
+        }
+
+        #vertical-rl{
+            writing-mode: vertical-rl;
+        }
+
+        #vertical-lr{
+            writing-mode: vertical-lr;
+        }
+    
+        
+    </style>
+</head>
+</head>
+<body>
+<h1>Propriedade <code>Writing-Mode</code></h1>
+<p>Define a orientação do texto (vertical e horizontal), ou seja, se deve ser lido do topo para baixo ou da esquerda para direita</p>
+
+<code>writing-mode: horizontal-tb;</code>
+<p class="exemplo" id="horizontal-tb">
+    Lorem ipsum dolor 
+    Aspernatur praesentium inventorenihilmolestiasdicta 
+</p>
+
+<code>writing-mode: vertical-rl;</code>
+<p class="exemplo" id="vertical-rl">
+    Lorem ipsum dolor 
+    Aspernatur praesentium inventorenihilmolestiasdicta 
+</p>
+
+<code>riting-mode: vertical-rl;</code>
+<p class="exemplo" id="vertical-lr">
+    Lorem ipsum dolor 
+    Aspernatur praesentium inventorenihilmolestiasdicta 
+</p>
+</body>
+</html>
