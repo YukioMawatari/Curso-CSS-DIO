@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade de Medida rem</title>
+    <style>
+        .exemplo-1{
+            font-size: 20px;
+            background-color: yellow;
+        }
+
+        .exemplo-2{
+            font-size: 2em;
+            background-color: red;
+        }
+
+        .exemplo-3{
+            background-color: aquamarine;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidade de Medida rem</h1>
+
+    <p>O <strong>rem</strong> (root em) tem um funcionamento semelhante à unidade de medida <strong>em</strong>, porém a diferença
+        é que, enquanto o <strong>em</strong> utliza o elemento pai como referência, o <strong>rem</strong> está relacionado ao tamanho da
+        font do elemento raiz, chamado root, que no caso, é a tag HTML.
+    </p>
+
+    <img src="unidade rem.png" alt="">
+
+    <br><br><br><br>
+
+
+    <p style="font-size: 1rem;">
+        font-size: 1rem = 16px;
+    </p>
+
+    <p style="font-size: 2rem;">
+        font-size: 2rem = 32px;
+    </p>
+
+    <p style="font-size: 3rem;">
+        font-size: 3rem = 48px;
+    </p>
+
+    <br><br>
+
+    <div class="exemplo-1">
+        font-size: 20px;
+            <div class="exemplo-2">
+                font-size: 2rem = 32px
+                    <div class="exemplo-3">
+                        font-size: 3rem = 48px;
+                    </div>
+            </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="exemplo-1">
+        font-size: 20px;
+            <div class="exemplo-2">
+                font-size: 2rem = 32px
+                    <div class="exemplo-3">
+                        font-size: 2rem = 32px;
+                    </div>
+            </div>
+    </div>
+    <br><br><br>
+    
+    <div class="exemplo-02" style="font-size: 30px; width: 10rem; background-color: red;">
+        font-size: 30px; <br>
+        width: 10rem = 300px;
+    </div>
+</body>
+</html>

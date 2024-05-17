@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferença Entre rem e em</title>
+
+    <!--
+
+        Meu elemento raiz HTML tem 16px
+
+    -->
+</head>
+<body>
+    <h1>Diferença Entre rem x em</h1>
+
+    <p style="font-size: 2rem;">
+         font-size: 2rem;
+    </p>
+    
+    <p style="font-size: 2em;">
+        font-size: 2em;
+    </p>
+    
+    <p style=" font-size: 200%;">
+        font-size: 200%;
+    </p>
+
+    <br><br>
+
+    <div class="exemplo-1" style="font-size: 2rem; background-color: yellow;">
+        font-size: 2rem;
+            <div class="exemplo-2" style="font-size: 2em; background-color: red;">
+                font-size: 2em;
+                    <div class="exemplo-3" style="font-size: 200%; background-color: aquamarine;">
+                        font-size: 200%;
+                    </div>
+            </div>
+    </div>
+
+    <br><br><br><br>
+
+   <div class="exemplo-01" style="font-size: 2rem; background-color: yellow;">
+        font-size: 2rem;
+            <div class="exemplo-02" style="font-size: 2em; background-color: red;">
+                font-size: 2em;
+            </div>
+        <div class="exemplo-03" style="font-size: 200%; background-color: aquamarine;">
+            font-size: 200%;
+        </div>
+        <div class="exemplo-002" style="font-size: 2rem; background-color: red;">
+            font-size: 2rem;
+        </div>
+   </div>
+
+</body>
+</html>

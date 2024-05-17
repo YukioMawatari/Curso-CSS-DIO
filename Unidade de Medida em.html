@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade de Medida em e rem</title>
+
+    <style>
+        .exemplo-1{
+            font-size: 20px;
+            background-color: yellow;
+        }
+
+        .exemplo-2{
+            font-size: 2em;
+            background-color: red;
+        }
+
+        .exemplo-3{
+            background-color: aquamarine;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidade de Medida em e rem</h1>
+
+    <p>A unidade de medida em, quando utilizada para definir tamanho de fonte de um elemento, vai usar como referência o valor da 
+        propriedade font-size do elemento pai no qual está inserido.
+    </p>
+
+    <p>
+        Caso seja utilizada em outras propriedades eu não sejam o tamanho da font do nosso elemento, o resultado será em relação 
+        ao tamanho da fonto do próprio elemento em que está sendo definida a propriedade.
+
+        <h1>em</h1>
+    </p>
+
+    <img src="medida em e rem.png" alt="">
+
+    <br><br><br><br>
+
+    <h1>Sem estar com nenhum elemento pai</h1>
+    <p style="font-size: 1em;">
+        font-size: 1em = 16px;
+    </p>
+
+    <p style="font-size: 2em;">
+        font-size: 1em = 32px;
+    </p>
+
+    <p style="font-size: 3em;">
+        font-size: 1em = 48px;
+    </p>
+
+    <br><br>
+
+    <h1>Com elemento pai</h1>
+    <div class="exemplo-1">
+        font-size: 20px;
+            <div class="exemplo-2">
+                font-size: 2em = 40px
+                    <div class="exemplo-3">
+                        font-size: 2em = 80px;
+                    </div>
+            </div>
+    </div>
+
+    <br><br><br>
+    
+    <div class="exemplo-02" style="font-size: 30px; width: 10em; background-color: red;">
+        font-size: 30px; <br>
+        width: 10em = 300px;
+    </div>
+</body>
+</html>
