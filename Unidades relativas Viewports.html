@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewports</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        .box{
+            height: 800px;
+            width:800px;
+            background-color: darkgray;
+            border-radius: 50%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .content{
+            height: 600px;
+            width: 500px;
+            background-color: white;
+            border: 5px solid black;
+            border-radius: 9px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .main{
+            height: 500px;
+            width: 450px;
+            background-color: red;
+            border-radius: 9px;
+        }
+
+        .button{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 0 0 120px 0;
+        }
+
+        .borda{
+            border: 3px solid black;;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidades relativas Viewports</h1>
+    <p>Viewports é a área de uma página web, podendo variar de dispositivo para dispositivo. As unidades de medida
+        viewport, vão ser calculadas em relação ao tamanho da área em em que o usuário está vendo sua página
+    </p>
+
+    <div class="box">
+        <div class="content">
+            <div class="main">
+                <div class="button">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="viewport.png" alt="" width="800px" height="400px">
+
+    <h2>Unidades de medida vw/vh/vmin/vmax</h2>
+
+    <div class="exemplo-01" style="width: 50%; background-color: yellow;">
+        width: 50%;
+    </div>
+
+    <div class="exemplo-02" style="width: 50vw; background-color: deeppink;">
+        width: 50vw;
+    </div>
+
+    <div class="exemplo-03" style="width: 50vh; background-color: aquamarine;">
+        width: 50vh;
+    </div>
+
+   <br><hr><br>
+
+   <div class="borda">
+    <div class="exemplo-01" style="width: 50%; background-color: yellow;">
+        width: 50%;
+    </div>
+
+    <div class="exemplo-02" style="width: 50vw; background-color: deeppink;">
+        width: 50vw;
+    </div>
+
+    <div class="exemplo-03" style="width: 50vh; background-color: aquamarine;">
+        width: 50vh;
+    </div>
+   </div>
+
+   <br><hr><br>
+
+   <div class="exemplo-08" style="width: 50vmin; background-color: red;">
+    width: 50vmin;
+</div>
+
+<div class="exemplo-09" style="width: 50vmax; background-color: deeppink;">
+    width: 50vmax;
+</div>
+</body>
+</html>
