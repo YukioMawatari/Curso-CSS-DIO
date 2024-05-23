@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--display: block quando está aplicando esse valor, significa que nossos elementos sejam exibidos em bloco
+        quando um elemento for exibido ou se comportar como bloco, quer dizer que o mesmo vai ocupar uma linha inteira da nossa
+        página e vai preencher todo o espaço da nossa linha.
+        
+    -->
+    <title>Display Block</title>
+    <style>
+        .exemplo{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade display</h1>
+
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+    <code>display: block;</code>
+    <br><br>
+
+    <!--Colocando um elemento block embaixo do outro, ficando um espaço entre eles e o mesmo não um do lado do outro
+        motivo: vão ocupar o espaço que está disponivel em nosso elemento.
+    -->
+    <div class="exemplo">Exemplo-01</div>
+    <p class="exemplo">Exemplo-02</p>
+
+    <!--span não tem como valor padrão o display: block;-->
+    <span class="exemplo">Exemplo-03</span>
+    <span class="exemplo">Exemplo-04</span>
+</body>
+</html>

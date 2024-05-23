@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Inline</title>
+    <!--
+
+        Quando é aplicado um display inline quer dizer que os elementos vão ser colocados lado a lado, ocupando a mesma
+        linha. Cada elemento vai ocupar a largura (width) necessário de acordo com o tamanho do conteudo que ele contem.
+
+    -->
+    <style>
+        .exemplo{
+            background-color: palevioletred;
+        }
+
+        .inline{
+            width: 300px;
+            background-color: blue;
+        }
+
+        b{
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .force_inline{
+            display: inline;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Propriedade display</h1>
+
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+    <code>display: block;</code>
+    <br><br>
+
+    <!--Colocando um elemento block embaixo do outro, ficando um espaço entre eles e o mesmo não um do lado do outro
+        motivo: vão ocupar o espaço que está disponivel em nosso elemento.
+
+        OBS: display: inline ignora as propriedade width/height, não aplica esses valores para esses elementos
+    -->
+    <div class="exemplo">Exemplo-01</div>
+    <p class="exemplo">Exemplo-02</p>
+
+    <!--span não tem como valor padrão o display: block;-->
+    <span class="exemplo">Exemplo-03</span>
+    <span class="exemplo">Exemplo-04</span>
+    <br><br>
+    <code>display: inline;</code>
+    <br><br>
+
+    <!--span já vem com display: inline por padrão, algumas outras tags que tem o padrão inline seria o em e b-->
+    <span class="exemplo">Exemplo inline 01</span>
+    <span class="exemplo">Exemplo inline 02</span>
+    <em class="exemplo">Exemplo inline 03 - Tag EM</em>
+    <b class="exemplo">Exemplo inline 04 - Tag B</b>
+    <span class="inline">Exemplo inline - Tag width/height</span>
+    <br><br>
+
+    <p>Lorem, <b class="exemplo">ipsum dolor sit amet consectetur adipisicing elit</b>. Nulla, culpa dolore necessitatibus exercitationem aperiam laborum perferendis ipsam unde, molestiae voluptates aut odit nihil impedit itaque iusto nobis sapiente commodi repellat.</p>
+
+    <!--Forçando elemento virar display: inline;-->
+    <p class="force_inline">Lorem, ipsum dolor sit amettae 01</p>
+    <p class="force_inline">Lorem, ipsum dolor sit amettae 02</p>
+</body>
+</html>
